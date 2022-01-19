@@ -21,9 +21,8 @@ componentWillUnmount() {
 
   render(){
     const presentDate = this.state.date;
-
-    const day = document.getElementById(presentDate.getDay());
-      
+    let day = document.getElementById(presentDate.getDay());
+       
     day.style.color='red';
     
     return (
