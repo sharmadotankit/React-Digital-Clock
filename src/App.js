@@ -21,9 +21,12 @@ componentWillUnmount() {
 
   render(){
     const presentDate = this.state.date;
-    let day = document.getElementById(presentDate.getDay());
-       
-    day.style.color='red';
+    let dayId = presentDate.getDay();
+
+    let day = document.getElementById(dayId);
+    console.log(day)
+
+    // day.style.color='red';
     
     return (
       <div className="App">
